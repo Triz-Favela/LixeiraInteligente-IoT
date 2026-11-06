@@ -1,0 +1,141 @@
+/* Estilos Globais do Tema Escuro */
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+    background-color: #121214; 
+    color: #e1e1e6; 
+}
+
+h2 { 
+    text-align: center; 
+    color: #ffffff; 
+    margin-bottom: 25px; 
+    font-weight: 600;
+}
+
+/* Container principal expandido */
+.dashboard-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Layout em flexbox lado a lado */
+.content-layout {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+/* Wrapper do mapa estendido */
+.map-wrapper {
+    position: relative;
+    flex: 1.4;
+}
+
+/* Mapa ampliado na altura e largura */
+#map { 
+    width: 100%; 
+    height: 550px; 
+    border-radius: 12px; 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Botão flutuante estilizado para o Tema Escuro */
+.btn-atualizar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    background: #202024;
+    color: #e1e1e6;
+    border: 1px solid #323238;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.2s ease;
+}
+
+.btn-atualizar:hover {
+    background: #29292e;
+    border-color: #00b37e;
+}
+
+/* Container de cards com background escuro e Scroll */
+.cards-container {
+    flex: 0.9;
+    height: 550px;
+    background-color: #202024;
+    border: 1px solid #323238;
+    border-radius: 12px;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Personalização da barra de rolagem (Scrollbar) */
+.cards-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cards-container::-webkit-scrollbar-track {
+    background: #121214;
+    border-radius: 4px;
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+    background: #323238;
+    border-radius: 4px;
+}
+
+.cards-container::-webkit-scrollbar-thumb:hover {
+    background: #4d4d57;
+}
+
+/* Estilo individual dos Cards */
+.card {
+    background: #29292e;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 6px solid #00b37e;
+    flex-shrink: 0;
+}
+
+.card.cheia {
+    border-left-color: #f75a68;
+}
+
+.card-info h3 { 
+    margin: 0 0 6px 0; 
+    color: #ffffff; 
+    font-size: 16px; 
+}
+
+.card-info p { 
+    margin: 4px 0; 
+    color: #c4c4cc; 
+    font-size: 13px; 
+}
+
+.card-status {
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #ffffff;
+    background: #00875f;
+    font-size: 12px;
+    text-align: center;
+}
+
+.card.cheia .card-status {
+    background: #f75a68;
+}

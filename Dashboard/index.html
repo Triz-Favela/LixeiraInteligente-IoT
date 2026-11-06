@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Monitor de Lixeiras - EcoBin</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Estilo CSS Externo -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <h2>Painel Geral de Lixeiras (PEVs)</h2>
+        
+        <div class="content-layout">
+            <!-- Coluna da Esquerda: Mapa + Botão Flutuante -->
+            <div class="map-wrapper">
+                <button class="btn-atualizar" onclick="atualizarMapaECards()">🔄 Atualizar</button>
+                <div id="map"></div>
+            </div>
+
+            <!-- Coluna da Direita: Lista de Cards com Scroll e Fundo Escuro -->
+            <div class="cards-container" id="cards-container">
+                <!-- Os cards aparecem aqui automaticamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Script JS Externo -->
+    <script src="js/script.js"></script>
+</body>
+</html>
